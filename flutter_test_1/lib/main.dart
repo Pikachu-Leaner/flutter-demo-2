@@ -329,11 +329,12 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 8),
                       const Text(
-                        'Passionate Lead Mobile Engineer specialized in Flutter, Dart, and building high-performance cross-platform applications. Focused on elegant UI and smooth user experiences.',
+                        'Passionate Lead Mobile Engineer specialized in Flutter,\nDart, and building high-performance cross-platform\napplications. Focused on elegant UI and smooth user\nexperiences.',
                         style: TextStyle(
-                          fontSize: 13,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
                           color: Color(0xFF475569),
-                          height: 1.5,
+                          height: 1.55,
                         ),
                       ),
                       const SizedBox(height: 18),
@@ -348,7 +349,7 @@ class ProfileScreen extends StatelessWidget {
                       const SizedBox(height: 12),
                       Wrap(
                         spacing: 10,
-                        runSpacing: 10,
+                        runSpacing: 12,
                         children: const [
                           SkillChip(label: 'Flutter'),
                           SkillChip(label: 'Dart'),
@@ -455,7 +456,7 @@ class ProjectCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 150,
-      height: 158,
+      height: 156,
       decoration: BoxDecoration(
         color: Colors.white,
         border: Border.all(color: const Color(0xFFE2E8F0), width: 1),
@@ -469,7 +470,7 @@ class ProjectCard extends StatelessWidget {
             child: Image.asset(
               image,
               width: 150,
-              height: 98,
+              height: 96,
               fit: BoxFit.cover,
             ),
           ),
